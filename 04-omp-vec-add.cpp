@@ -1,4 +1,4 @@
-// $ mpic++ -std=c++11 -O3 -fopenmp 07-mpi-inner.cpp && mpirun -n 4 ./a.out -n 100000000 -repeat 10
+// $ g++ -std=c++11 -O3 -fopenmp 04-omp-vec-add.cpp && ./a.out -n 100000000 -repeat 10
 
 #include <omp.h>
 #include <stdio.h>
