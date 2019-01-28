@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
   MPI_Comm_rank(comm, &mpirank);
   MPI_Comm_size(comm, &mpisize);
 
-  printf("I am process %d of %d\n", rank, size);
+  printf("I am process %d of %d\n", mpirank, mpisize);
 
   MPI_Finalize();
   return 0;
